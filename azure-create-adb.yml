@@ -19,4 +19,4 @@ steps:
     csmFile: 'createADB/azuredeploy-adb.json'
     csmParametersFile: 'createADB/azuredeploy-adb.parameters.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'Deploy ADB'
+    deploymentName: 'DeployADB'
