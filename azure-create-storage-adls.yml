@@ -13,8 +13,8 @@ steps:
     resourceGroupName: 'RG1-EastUS'
     location: 'East US'
     templateLocation: 'Linked artifact'
-    csmFile: 'createStorageDataLake/azuredeploy-storageblob.json'
-    csmParametersFile: 'createStorageDataLake/azuredeploy-storageblob.parameters.json'
+    csmFile: 'createStorageDataLake/azuredeploy-storagedatalake.json'
+    csmParametersFile: 'createStorageDataLake/azuredeploy-storagedatalake.parameters.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployStorageADLS'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
