@@ -19,5 +19,5 @@ steps:
     csmFile: 'createAKV/azuredeploy-akv.json'
     csmParametersFile: 'createAKV/azuredeploy-akv.parameters.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'Deploy-Keyvault'
+    deploymentName: 'DeployAKV'
 
