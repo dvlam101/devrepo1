@@ -1,7 +1,4 @@
 # Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - master
@@ -16,7 +13,10 @@ steps:
     resourceGroupName: 'RG1-EastUS'
     location: 'East US'
     templateLocation: 'Linked artifact'
-    csmFile: 'createStorageDataLake/'
-    csmParametersFile: 'createStorageDataLake/'
+    csmFile: 'createStorageDataLake/azuredeploy-storageblob.json'
+    csmParametersFile: 'createStorageDataLake/azuredeploy-storageblob.parameters.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployStorageADLS'
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
