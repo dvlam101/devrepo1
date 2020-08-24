@@ -29,6 +29,7 @@
                     "family": "A",
                     "name": "standard"
                 },
+                "accessPolicies": [],
                 "enabledForDeployment": false,
                 "enabledForDiskEncryption": false,
                 "enabledForTemplateDeployment": false,
