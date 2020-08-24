@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'AzureRmPipeline-conn'
+    subscriptionId: '4916540a-4b0e-49f1-8191-bac244fef8b9'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'RG1-EastUS'
+    location: 'East US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'createStorageDataLake/'
+    csmParametersFile: 'createStorageDataLake/'
+    deploymentMode: 'Incremental'
+    deploymentName: 'DeployStorageADLS'
