@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vaultName": {
-        "value": null
+        "value": "lamdavekeyvault"
     }
 }
 }
