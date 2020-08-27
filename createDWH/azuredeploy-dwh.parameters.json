@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sqlServerName": {
+            "value": "lamdavesqlserver"
+        },
+        "sqlAdministratorLogin": {
+            "value": "dwdbadmin"
+        },
+        "sqlAdministratorPassword": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/4916540a-4b0e-49f1-8191-bac244fef8b9/resourceGroups/RG1-EastUS/providers/Microsoft.KeyVault/vaults/lamdavekeyvault"
+                },
+                "secretName": "sqlserverpassword"
+            }
+        },
+        "dataWarehouseName": {
+            "value": "lamdavesqldwh"
+        }
+    }
+}
